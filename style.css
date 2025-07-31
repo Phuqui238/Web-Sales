@@ -53,38 +53,61 @@ body {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 4px;
-
 }
 
-.select-wrapper {
+.dropdown {
+    position: relative;
+}
+
+.dropdown-title {
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
 }
 
-.select-wrapper:hover {
-    border-bottom: 2px solid black;
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    background: white;
+    display: none;
+    padding: 20px 14%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: start;
+    gap: 100px;
+}
 
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.column a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.column a:hover {
+    color: rgb(12, 162, 192);
+    font-weight: 500;
 }
 
 .icon {
     width: 15px;
     height: 24px;
-}
-
-.collection {
-    border: none;
-    background: transparent;
-    font-size: 15px;
-    cursor: pointer;
-    color: #100808;
-    padding-right: 20px;
-
-}
-
-.collection {
-    outline: none;
 }
 
 .nag-icon {
